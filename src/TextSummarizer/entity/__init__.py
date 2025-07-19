@@ -43,3 +43,11 @@ class ModelTrainerConfig:
     gradient_accumulation_steps: int
 
 
+
+@dataclass(frozen=True)
+class ModelEvaluationConfig:
+    root_dir: Path
+    model_path: Path
+    data_path: Path
+    metrics_file_name: Path
+    tokenizer_path: Path
